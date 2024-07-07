@@ -17,6 +17,11 @@ Test fonts with [Google fonts](https://fonts.google.com/?preview.text=westborn).
 
 5. Generate new favicon pack at https://realfavicongenerator.net/
 
+## Changing domain
+
+1. `Settings > Pages > Custom domain`
+2. Change contents of `src/assets/CNAME`
+
 ## Frontmatter
 
 ``` markdown
