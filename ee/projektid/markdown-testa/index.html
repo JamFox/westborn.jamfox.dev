@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="ee-ee" dir="ltr" x-data="" :data-theme="$store.elva.theme"><head><meta charset="utf-8"><style>:where(img){height:auto;}</style>
+
+        <!-- charset / viewport -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- title / description -->
+        <title>Markdown testa • Westborn</title>
+		<meta name="description" content="A multilingual clean green 11ty starter theme">
+
+        <!-- canonical / alternates -->
+        <link rel="canonical" href="http://localhost:8080/ee/projektid/markdown-testa/">
+        <link rel="alternate" hreflang="ee" href="http://localhost:8080/ee/projektid/markdown-testa/"><link rel="alternate" hreflang="en" href="http://localhost:8080/en/projects/markdown-test/">
+
+        <!-- open graph -->
+        <meta property="og:site_name" content="Westborn">
+        <meta property="og:title" content="Markdown testa • Westborn">
+        <meta property="og:description" content="A multilingual clean green 11ty starter theme">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://localhost:8080/ee/projektid/markdown-testa/">
+        <meta property="og:image" content="http://localhost:8080/assets/img/opengraph-default.png">
+        <meta property="og:image:alt" content="A Swedish description of the default opengraph image">
+
+        <!-- icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+
+        <!-- styles -->
+        <link rel="stylesheet" href="/assets/css/bundle.css?v=1720361513227">
+
+        <!-- feeds -->
+        <link rel="alternate" href="http://localhost:8080/feed/feed.xml" type="application/atom+xml" title="RSS Feed • Westborn">
+		<link rel="alternate" href="http://localhost:8080/feed/feed.json" type="application/json" title="JSON Feed • Westborn">
+
+        <!-- preload / prefetch -->
+        
+
+        <!-- everything else -->
+        <link rel="manifest" href="http://localhost:8080/ee/site.webmanifest" "="">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#eceff4">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#2e3440">
+        
+        
+
+        <!-- set theme before page renders to stop fouc -->
+        <script>document.documentElement.dataset.theme = localStorage.getItem('theme') === null ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : localStorage.getItem('theme')</script>
+    </head>
+    <body class="posts">
+        <!-- header -->
+        <div class="container">
+            <header id="header" role="banner" class="header">
+
+    <a href="#content" class="skip-link screen-reader-text">Hoppa till innehållet</a>
+
+    <nav class="navigation">
+    <a class="site-logo" href="/" aria-label="Hem">
+        <svg fill="none" height="72" viewBox="0 0 485 72" width="485" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="logo-title" role="img">
+            <title id="logo-title">Westborn</title>
+            <path fill-rule="evenodd" fill="currentColor" d="M465.841,69.320 L465.841,39.039 C465.841,36.881 465.284,35.151 464.174,33.849 C463.063,32.549 461.492,31.897 459.461,31.897 C457.111,31.897 455.207,32.659 453.747,34.182 C452.286,35.706 451.557,37.579 451.557,39.800 L451.557,69.320 L432.608,69.320 L432.608,19.042 L448.129,19.042 L449.367,26.660 C451.334,23.993 453.921,21.867 457.128,20.279 C460.333,18.693 463.713,17.899 467.269,17.899 C473.109,17.899 477.490,19.518 480.410,22.755 C483.329,25.993 484.791,30.659 484.791,36.753 L484.791,69.320 L465.841,69.320 ZM407.135,37.896 C405.388,39.928 404.516,42.943 404.516,46.942 L404.516,69.320 L385.567,69.320 L385.567,19.042 L401.088,19.042 L402.326,26.660 C403.469,23.740 405.278,21.534 407.754,20.041 C410.230,18.551 413.023,17.804 416.134,17.804 C417.593,17.804 418.895,17.979 420.038,18.327 C421.181,18.677 421.752,18.884 421.752,18.946 L421.752,34.849 L415.658,34.849 C411.721,34.849 408.880,35.865 407.135,37.896 ZM348.048,70.463 C339.223,70.463 332.303,68.241 327.289,63.797 C322.274,59.354 319.766,52.815 319.766,44.181 C319.766,35.548 322.274,29.009 327.289,24.565 C332.303,20.122 339.223,17.899 348.048,17.899 C356.871,17.899 363.808,20.137 368.855,24.612 C373.902,29.088 376.425,35.611 376.425,44.181 C376.425,52.751 373.902,59.274 368.855,63.749 C363.808,68.225 356.871,70.463 348.048,70.463 ZM357.475,41.515 C357.475,34.341 354.333,30.754 348.048,30.754 C341.826,30.754 338.716,34.341 338.716,41.515 L338.716,46.942 C338.716,54.053 341.826,57.607 348.048,57.607 C354.333,57.607 357.475,54.053 357.475,46.942 L357.475,41.515 ZM291.675,70.463 C284.691,70.463 279.359,67.701 275.677,62.178 L274.059,69.320 L258.632,69.320 L258.632,0.282 L277.582,0.282 L277.582,23.708 C281.201,19.836 285.898,17.899 291.675,17.899 C298.467,17.899 303.705,20.105 307.387,24.517 C311.068,28.930 312.910,35.453 312.910,44.086 C312.910,52.784 311.068,59.354 307.387,63.797 C303.705,68.241 298.467,70.463 291.675,70.463 ZM293.961,41.705 C293.961,35.167 291.230,31.897 285.771,31.897 C282.977,31.897 280.882,32.897 279.486,34.896 C278.089,36.896 277.392,39.484 277.392,42.657 L277.392,45.800 C277.392,48.975 278.089,51.546 279.486,53.513 C280.882,55.481 282.977,56.465 285.771,56.465 C291.230,56.465 293.961,53.227 293.961,46.752 L293.961,41.705 ZM237.588,70.463 C232.001,70.463 227.699,69.447 224.685,67.416 C221.669,65.385 220.162,61.925 220.162,57.036 L220.162,31.897 L213.115,31.897 L213.115,19.042 L220.923,19.042 L225.018,3.806 L239.111,3.806 L239.111,19.042 L249.776,19.042 L249.776,31.897 L239.111,31.897 L239.111,51.037 C239.111,53.322 239.492,54.989 240.254,56.036 C241.016,57.084 242.411,57.607 244.444,57.607 L249.776,57.607 L249.776,68.749 C248.253,69.258 246.284,69.668 243.873,69.987 C241.459,70.304 239.364,70.463 237.588,70.463 ZM185.024,36.658 C189.467,37.293 193.180,38.039 196.165,38.896 C199.148,39.753 201.751,41.276 203.973,43.467 C206.195,45.657 207.306,48.720 207.306,52.656 C207.306,59.069 204.909,63.639 200.117,66.368 C195.323,69.098 189.054,70.463 181.310,70.463 C176.866,70.463 172.676,69.844 168.740,68.606 C164.803,67.368 161.599,65.449 159.123,62.845 C156.647,60.243 155.409,56.941 155.409,52.941 L173.025,52.941 L173.025,53.322 C173.088,55.481 173.993,56.989 175.739,57.846 C177.485,58.703 179.342,59.131 181.310,59.131 C186.579,59.131 189.214,57.893 189.214,55.417 C189.214,54.148 188.388,53.227 186.738,52.656 C185.086,52.084 182.389,51.482 178.644,50.847 C174.135,50.085 170.438,49.260 167.550,48.371 C164.661,47.482 162.137,45.975 159.980,43.848 C157.821,41.721 156.742,38.753 156.742,34.944 C156.742,28.787 159.075,24.407 163.741,21.803 C168.407,19.201 174.485,17.899 181.977,17.899 C188.705,17.899 194.403,19.217 199.069,21.851 C203.735,24.486 206.068,28.564 206.068,34.087 L188.452,34.087 C188.452,32.247 187.626,30.945 185.976,30.183 C184.833,29.549 183.405,29.231 181.691,29.231 C177.120,29.231 174.835,30.311 174.835,32.468 C174.835,33.675 175.628,34.532 177.215,35.039 C178.801,35.548 181.405,36.087 185.024,36.658 ZM121.319,58.369 C124.492,58.369 126.825,57.703 128.318,56.370 C129.808,55.036 130.555,53.260 130.555,51.037 L148.934,51.037 C148.934,57.131 146.616,61.893 141.982,65.321 C137.347,68.749 130.587,70.463 121.699,70.463 C112.367,70.463 105.130,68.289 99.988,63.940 C94.846,59.592 92.275,53.005 92.275,44.181 C92.275,35.548 94.782,29.009 99.798,24.565 C104.812,20.122 111.732,17.899 120.557,17.899 C129.761,17.899 136.793,20.058 141.649,24.374 C146.505,28.692 148.934,35.294 148.934,44.181 L148.934,47.418 L111.225,47.418 C111.225,51.037 112.034,53.767 113.653,55.608 C115.272,57.450 117.826,58.369 121.319,58.369 ZM129.794,38.467 C129.794,35.865 129.047,33.801 127.556,32.278 C126.063,30.754 123.985,29.992 121.319,29.992 C115.351,29.992 112.018,32.818 111.320,38.467 L129.794,38.467 ZM52.947,69.320 L45.139,41.324 L44.758,41.324 L36.854,69.320 L18.381,69.320 L0.002,19.042 L20.381,19.042 L27.998,48.752 L28.665,48.752 L36.569,19.042 L55.423,19.042 L63.041,48.752 L63.708,48.752 L71.421,19.042 L89.894,19.042 L71.421,69.320 L52.947,69.320 Z"></path>
+        </svg>
+    </a>
+    <ul class="navigation-menu">
+        
+        <li>
+            <a href="/ee/meist/">
+                Meist
+            </a>
+        </li>
+        <li>
+            <a href="/ee/">
+                Projektid
+            </a>
+        </li>
+        <li>
+            <a href="/ee/kontakt/">
+                Kontakt
+            </a>
+        </li>
+    </ul>
+
+    <div class="switch-language">
+	
+		
+			
+			
+				
+			
+			
+				<a href="/en/projects/markdown-test/" lang="en" hreflang="en" aria-label="EN: English">
+					EN
+				</a>
+			
+		
+	
+		
+			<a href="/ee/projektid/markdown-testa/" lang="ee" hreflang="ee" aria-label="EE: Eesti" aria-current="page" class="current">
+				EE
+			</a>
+		
+	
+</div>
+
+    <div class="switch-wrapper" x-data="" x-cloak="">
+	<input class="switch" id="darkmode" type="checkbox" value="dark" :checked="$store.elva.theme === 'dark'">
+	<label class="switch-btn" for="darkmode" tabindex="0" aria-label="Toggle dark/light theme" @keydown.prevent.space="" @click="$store.elva.themeToggle()" @keyup.prevent.space="$store.elva.themeToggle()" :class="$store.elva.theme === 'dark' ? 'switch-button-on' : 'switch-button-off'">
+        <svg class="icon icon-sun" width="1em" height="1em" viewBox="0 0 24 24" fill="none" aria-labelledby="icon-sun" xmlns="http://www.w3.org/2000/svg">
+            <title id="icon-sun">Ljus</title>
+            <circle cx="11.9998" cy="11.9998" r="5.75375" fill="currentColor"></circle>
+            <g>
+                <circle cx="3.08982" cy="6.85502" r="1.71143" transform="rotate(-60 3.08982 6.85502)" fill="currentColor"></circle>
+                <circle cx="3.0903" cy="17.1436" r="1.71143" transform="rotate(-120 3.0903 17.1436)" fill="currentColor"></circle>
+                <circle cx="12" cy="22.2881" r="1.71143" fill="currentColor"></circle>
+                <circle cx="20.9101" cy="17.1436" r="1.71143" transform="rotate(-60 20.9101 17.1436)" fill="currentColor"></circle>
+                <circle cx="20.9101" cy="6.8555" r="1.71143" transform="rotate(-120 20.9101 6.8555)" fill="currentColor"></circle>
+                <circle cx="12" cy="1.71143" r="1.71143" fill="currentColor"></circle>
+            </g>
+            
+        </svg>
+        <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 50 50" aria-labelledby="icon-moon">
+            <title id="icon-moon">Mörk</title>
+            <path d="M 43.81 29.354 C 43.688 28.958 43.413 28.626 43.046 28.432 C 42.679 28.238 42.251 28.198 41.854 28.321 C 36.161 29.886 30.067 28.272 25.894 24.096 C 21.722 19.92 20.113 13.824 21.683 8.133 C 21.848 7.582 21.697 6.985 21.29 6.578 C 20.884 6.172 20.287 6.022 19.736 6.187 C 10.659 8.728 4.691 17.389 5.55 26.776 C 6.408 36.163 13.847 43.598 23.235 44.451 C 32.622 45.304 41.28 39.332 43.816 30.253 C 43.902 29.96 43.9 29.647 43.81 29.354 Z" fill="currentColor"></path>
+        </svg>
+	</label>
+</div>
+
+</nav>
+
+</header>
+        </div>
+
+        <!-- content -->
+        <main id="content">
+            <div class="container">
+                <article class="hentry">
+    <header class="entry-header">
+        <h1 class="entry-title">Markdown testa</h1>
+        <ul class="meta">
+            <li class="meta-date">
+                <time class="entry-date published" datatime="2023-08-02T00:00:00Z">kuɖa, deasiamime 2 lia 2023</time>
+            </li>
+            <!-- <li class="meta-reading-time">2 minuter att läsa</li> -->
+        </ul>
+    </header>
+    <div class="entry-content">
+        <p>Lorem ipsum dolor <strong>sit amet</strong>, consectetur adipiscing elit ©. Sed nec <strong>risus elementum</strong>, tempor tortor non, bibendum libero. Suspendisse potenti. Vivamus dapibus <em>tortor neque</em>, sed aliquet lacus <em>elementum nec</em>. Morbi vel ligula vitae leo placerat sollicitudin quis at eros. Pellentesque tristique mi a tortor auctor, sit amet elementum augue pulvinar. Donec non orci in <s>ipsum mollis</s> tempor. Integer libero est, H<sub>2</sub>O pharetra <ins>vitae</ins> facilisis quis 🇸🇪.</p>
+<h2>Citat, kod och typografi</h2>
+<blockquote>
+<p>Maecenas vel quam id eros tristique sollicitudin. Nunc tincidunt orci malesuada, vehicula mauris ut, sollicitudin lacus. Quisque eget vestibulum quam.</p>
+</blockquote>
+<p>Aenean ac tincidunt felis ®. Fusce eu <mark>arcu blandit</mark>, consectetur odio ullamcorper, maximus erat ®. Fusce aliquam sapien a commodo aliquet. Phasellus placerat sagittis euismod. Curabitur vitae est id nunc ornare — scelerisque in vitae nisl. In non mi leo…</p>
+<!-- FM:Snippet:Start data:{"id":"Quote","fields":[{"name":"quote","value":"Maecenas vel quam id eros tristique sollicitudin. Nunc tincidunt orci malesuada, vehicula mauris ut, sollicitudin lacus. Quisque eget vestibulum quam."},{"name":"author","value":"Scott Evans"},{"name":"cite","value":"Hemsida"},{"name":"url","value":"https://scott.ee"}]} -->
+<blockquote>
+  <p>Proin sit amet neque vitae leo posuere pellentesque vel non augue. Sed efficitur ipsum neque, non gravida ipsum vestibulum eget.</p>
+  <figcaption>— Scott Evans, <cite><a href="https://scott.ee">Hemsida</a></cite></figcaption>
+</blockquote>
+<!-- FM:Snippet:End -->
+<p>Cras quis sollicitudin eros ©. Fusce eget velit <code>quis nulla pharetra eleifend id vitae nisl</code>. Aenean vehicula sem vitae nunc semper porta. Donec porta leo vitae massa accumsan consequat. Praesent quis sodales orci, ut elementum quam. Phasellus ultrices lectus in tempus varius±. Duis est nulla – imperdiet dapibus ultricies non 19<sup>th</sup>, hendrerit non mauris™.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> <span class="token function-variable function">foo</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">bar</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> bar<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">foo</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<p>Donec tincidunt mauris id metus iaculis tempor. Proin sit amet neque vitae leo posuere pellentesque vel non augue. Sed efficitur ipsum neque, non gravida ipsum vestibulum eget. Fusce augue lacus, vestibulum efficitur tincidunt et, posuere sed sem. Etiam tortor lorem, vestibulum ac lectus vitae, feugiat egestas augue. Proin id suscipit mi.</p>
+<hr>
+<h2>Listor</h2>
+<h3>Ordered</h3>
+<ol>
+<li>
+<p>Lorem ipsum dolor sit amet</p>
+</li>
+<li>
+<p>Consectetur adipiscing elit</p>
+</li>
+<li>
+<p>Integer molestie lorem at massa</p>
+</li>
+<li>
+<p>You can use sequential numbers…</p>
+</li>
+<li>
+<p>…or keep all the numbers as <code>1.</code></p>
+</li>
+</ol>
+<p>Starta numrering med offset:</p>
+<ol start="57">
+<li>foo</li>
+<li>bar</li>
+</ol>
+<h3>Unordered</h3>
+<ul>
+<li>Skapa en lista genom att börja en rad med <code>+</code>, <code>-</code>, eller <code>*</code></li>
+<li>Underlistor skapas genom att dra in 2 mellanslag:
+<ul>
+<li>Byte av markörtecken tvingar ny liststart:
+<ul>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+<ul>
+<li>Facilisis in pretium nisl aliquet</li>
+</ul>
+<ul>
+<li>Nulla volutpat aliquam velit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Superlätt!</li>
+</ul>
+<hr>
+<h3>Meddelanden och länkar</h3>
+<div class="notice notice-notice">Allmänt meddelande</div>
+<div class="notice notice-warning">Varnings meddelande</div>
+<div class="notice notice-error">Fel meddelande</div>
+<h3>Rubrik nivå 3</h3>
+<p>Cras quis sollicitudin eros <a href="https://scott.ee" title="title text!">link with title</a>. Fusce eget velit quis nulla pharetra eleifend id vitae nisl. Aenean <a href="https://scott.ee">normal link</a> vitae nunc semper porta. Donec porta leo vitae massa accumsan consequat. Praesent quis sodales orci, ut elementum quam. Phasellus ultrices lectus in tempus varius. Duis est nulla, imperdiet dapibus ultricies non, hendrerit non mauris.</p>
+<h4>Rubrik nivå 4</h4>
+<p>Aenean ac tincidunt felis. Fusce eu arcu blandit, consectetur odio ullamcorper, maximus erat. Fusce aliquam sapien a commodo aliquet. Phasellus placerat sagittis euismod. Curabitur vitae est id nunc ornare scelerisque in vitae nisl. In non mi leo.</p>
+<p><a href="https://github.com/scottsweb/elva">https://github.com/scottsweb/elva</a></p>
+<h3>Tabeller</h3>
+<table>
+<thead>
+<tr>
+<th>Titel</th>
+<th>Beskrivning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuseu</td>
+<td>Aenean ac tincidunt felis. Fusce eu arcu blandit, consectetur odio ullamcorper.</td>
+</tr>
+<tr>
+<td>Maxim</td>
+<td>Fusce eu arcu blandit, consectetur odio ullamcorper, maximus erat.</td>
+</tr>
+<tr>
+<td>Odio</td>
+<td>Praesent quis sodales orci.</td>
+</tr>
+</tbody>
+</table>
+<p>Högerjusterade kolumner</p>
+<table>
+<thead>
+<tr>
+<th>Titel</th>
+<th style="text-align:right">Beskrivning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuseu</td>
+<td style="text-align:right">Aenean ac tincidunt felis. Fusce eu arcu blandit, consectetur odio ullamcorper.</td>
+</tr>
+<tr>
+<td>Maxim</td>
+<td style="text-align:right">Fusce eu arcu blandit, consectetur odio ullamcorper, maximus erat.</td>
+</tr>
+<tr>
+<td>Odio</td>
+<td style="text-align:right">Praesent quis sodales orci.</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+</article>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <div class="container">
+            <footer id="footer" class="footer">
+
+    <div class="footerdiv">
+        <a href="mailto:taavi498@hotmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"></path>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"></path>
+            </svg>
+        </a>
+        <a href="https://ee.linkedin.com/in/taavi-turvas-83970112">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+            </svg>
+        </a>
+        <a href="https://www.instagram.com/kavalkits/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+            </svg>
+        </a>
+    </div>
+</footer>
+        </div>
+
+        <!-- scripts -->
+        <script src="/assets/js/bundle.js?v=1720361513229" defer=""></script>
+    
+</body></html>

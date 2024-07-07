@@ -1,0 +1,12 @@
+/* TEAM */
+Designer / Developer: JamFox
+Contact: westborn@jamfox.dev
+Site: https://jamfox.dev
+From: Tallinn, Estonia
+
+
+/* SITE */
+Last update: 2024-07-07
+Standards: HTML5, CSS3
+Components: elva, Alpine.js
+Software: 11ty
