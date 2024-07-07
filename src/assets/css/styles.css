@@ -23,7 +23,6 @@ body {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 20px;
     box-sizing: border-box;
 }
 
@@ -458,12 +457,11 @@ a[aria-current="page"] {
     color: var(--foreground-soft);
 }
 
-/* footer */
-
 /* Footer */
 .footer {
     justify-content: center;
     margin: 2vw 0 2vw 0;
+    padding: 0 20px;
 }
 
 @media (min-width: 1200px) {
