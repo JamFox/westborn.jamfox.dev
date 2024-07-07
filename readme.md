@@ -4,6 +4,8 @@ Using Elva template: a multilingual, clean, green, [11ty starter theme](https://
 
 ## Changing logo
 
+Test fonts with [Google fonts](https://fonts.google.com/?preview.text=westborn).
+
 1. In Photoshop create a layer
 2. Convert to shape
 3. Right click on layer with shape and "Copy SVG"
