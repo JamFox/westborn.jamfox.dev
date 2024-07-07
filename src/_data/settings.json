@@ -1,0 +1,26 @@
+{
+	"themeColorLight": "#eceff4",
+	"themeColorDark": "#2e3440",
+	"cdn": false,
+	"author": {
+		"name": "JamFox",
+		"email": "westborn@jamfox.dev",
+		"url": "https://jamfox.dev",
+		"location": "Tallinn, Estonia"
+	},
+	"meta": {
+		"separator": "•",
+		"opengraphDefaultImage": "/assets/img/opengraph-default.png"
+	},
+	"seo": {
+		"defaultChangeFrequency": "monthly",
+		"defaultPriority": "0.7"
+	},
+	"manifest": {
+		"themeColor": "#eceff4",
+		"backgroundColor": "#eceff4",
+		"display": "minimal-ui",
+		"orientation": "portrait-primary",
+		"categories": ["business", "photo"]
+	}
+}

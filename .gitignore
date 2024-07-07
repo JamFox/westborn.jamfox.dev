@@ -1,0 +1,8 @@
+.DS_Store
+.cache
+.env
+dist
+.jampack
+_jampack
+node_modules
+notes.md
