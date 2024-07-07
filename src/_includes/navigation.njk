@@ -20,7 +20,9 @@
         {%- endfor %}
     </ul>
 
-    {% include "switch-il8n.njk" %}
+    {% if page.url != '/' %}
+        {% include "switch-il8n.njk" %}
+    {% endif %}
 
     {% include "switch-darkmode.njk" %}
 </nav>
