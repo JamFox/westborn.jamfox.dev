@@ -23,5 +23,5 @@ alias = 't'
 
 [tasks.clean]
 description = 'Clean built site directory'
-run = "rm -rf public"
+run = "rm -rf dist"
 alias = 'c'
